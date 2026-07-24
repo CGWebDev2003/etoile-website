@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { navLinks, school } from "@/lib/content";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { MobileMenu } from "./MobileMenu";
 import styles from "./Header.module.css";
 
@@ -25,9 +26,13 @@ export function Header(): ReactNode {
           <a href="#kontakt" className={styles.cta}>
             Probestunde
           </a>
+          <ThemeToggle />
         </nav>
 
-        <MobileMenu links={navLinks} />
+        <div className={styles.mobileActions}>
+          <ThemeToggle />
+          <MobileMenu links={navLinks} />
+        </div>
       </div>
     </header>
   );

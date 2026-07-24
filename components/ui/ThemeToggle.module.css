@@ -1,0 +1,40 @@
+.toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+  color: var(--text-primary);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.icon {
+  position: absolute;
+  display: inline-flex;
+  color: inherit;
+  opacity: 0;
+  transform: scale(0.6) rotate(-45deg);
+  transition:
+    opacity var(--transition-base),
+    transform var(--transition-base);
+}
+
+.iconActive {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .toggle:hover {
+    color: var(--accent-strong);
+    background-color: var(--surface-accent);
+  }
+}
+
+.toggle:active {
+  transform: scale(0.94);
+}

@@ -6,6 +6,21 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.1.0] – 2026-07-24
+
+### Added
+
+- Manueller Dark-Mode-Umschalter (`ThemeToggle`) im Header (Desktop und
+  Mobile). Die Wahl wird in `localStorage` gespeichert; ohne explizite Wahl
+  folgt die Seite weiterhin der System-Präferenz.
+- FOUC-freies Init-Skript im Layout, das das gespeicherte Theme vor dem
+  ersten Paint setzt.
+
+### Changed
+
+- Dark-Mode-Tokens greifen nun sowohl bei expliziter Wahl
+  (`data-theme="dark"`) als auch über die System-Präferenz.
+
 ## [1.0.0] – 2026-07-24
 
 ### Added

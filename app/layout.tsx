@@ -48,7 +48,17 @@ export default function RootLayout({
     <html
       lang="de"
       className={`${montserrat.variable} ${dancingScript.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        {/* Setzt das gewählte Theme vor dem ersten Paint – verhindert FOUC. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.dataset.theme=t;}}catch(e){}})();",
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

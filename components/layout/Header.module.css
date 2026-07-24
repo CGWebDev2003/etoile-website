@@ -39,6 +39,13 @@
   color: var(--text-secondary);
 }
 
+/* --- Aktionen für Mobile/Tablet (Theme-Umschalter + Menü-Button) --- */
+.mobileActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
 /* --- Desktop-Navigation (ab lg sichtbar) --- */
 .desktopNav {
   display: none;
@@ -108,5 +115,9 @@
 @media (min-width: 1024px) {
   .desktopNav {
     display: flex;
+  }
+
+  .mobileActions {
+    display: none;
   }
 }
