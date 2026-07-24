@@ -6,6 +6,14 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.1.0] – 2026-07-24
+
+### Removed
+
+- Dark Mode entfernt: `@media (prefers-color-scheme: dark)`-Override der Design-
+  Tokens gestrichen. Die Website rendert ausschließlich im Light-Theme
+  (`color-scheme: light`).
+
 ## [1.0.0] – 2026-07-24
 
 ### Added

@@ -95,37 +95,6 @@
 /* --- Breakpoints (Referenz, mobile-first via min-width):
    sm 480px, md 768px, lg 1024px, xl 1280px --- */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #171313;
-    --background-alt: #1e1919;
-    --surface: #221d1d;
-    --surface-accent: #2a2120;
-
-    --text-primary: #f4eeeb;
-    --text-secondary: #b0a7a4;
-    --text-on-accent: #1c1a1a;
-    --text-inverse: #f4eeeb;
-
-    --accent: var(--color-blush-400);
-    --accent-strong: var(--color-blush-400);
-    --accent-soft: #2f2422;
-
-    --border: #332c2b;
-    --border-strong: #443a38;
-
-    --footer-bg: #0f0c0c;
-    --footer-text: #b0a7a4;
-    --footer-heading: #f4eeeb;
-
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 12px 30px -12px rgba(0, 0, 0, 0.6);
-    --shadow-lg: 0 30px 60px -20px rgba(0, 0, 0, 0.7);
-
-    color-scheme: dark;
-  }
-}
-
 /* ==========================================================================
    Reset
    ========================================================================== */

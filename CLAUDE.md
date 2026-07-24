@@ -17,7 +17,6 @@ Kernregeln
 - Klassennamen im Modul in camelCase, semantisch benannt (.cardHeader, nicht .mt16).
 - Vor dem Bauen einer neuen Komponente prüfen, ob es bereits eine passende gibt. Wiederverwenden statt duplizieren.
 - Interaktive Elemente brauchen alle States: default, hover, focus-visible, active, disabled, loading.
-- Dark Mode über Custom Properties, bei jeder neuen Komponente mitgedacht — nicht nachgereicht.
 - Globale Styles nur für Reset, Tokens und Typografie-Basis. Alles andere ist scoped.
 
 3. Versionierung
