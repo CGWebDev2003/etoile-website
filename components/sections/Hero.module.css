@@ -1,0 +1,138 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      120% 90% at 15% 10%,
+      var(--color-blush-100) 0%,
+      transparent 55%
+    ),
+    linear-gradient(180deg, var(--background-alt) 0%, var(--background) 100%);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  padding-block: var(--space-16) var(--space-20);
+}
+
+.figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  order: -1;
+}
+
+.figure::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  top: 8%;
+  width: min(78%, 300px);
+  margin-inline: auto;
+  aspect-ratio: 3 / 4;
+  border-radius: 50% 50% 46% 54% / 60% 60% 40% 40%;
+  background-color: var(--surface-accent);
+  z-index: 0;
+}
+
+.silhouette {
+  position: relative;
+  z-index: 1;
+  width: min(64%, 240px);
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(28, 26, 26, 0.12));
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 8vw, 3.75rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.titleAccent {
+  display: block;
+  font-family: var(--font-script);
+  font-size: clamp(2.75rem, 11vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--accent-strong);
+}
+
+.lead {
+  max-width: 46ch;
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.signature {
+  margin-top: var(--space-4);
+  font-family: var(--font-script);
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.signatureRole {
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding-block: var(--space-20) var(--space-24);
+  }
+
+  .silhouette {
+    width: min(48%, 280px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: var(--space-16);
+  }
+
+  .figure {
+    order: 0;
+  }
+
+  .silhouette {
+    width: 100%;
+    max-width: 320px;
+  }
+}

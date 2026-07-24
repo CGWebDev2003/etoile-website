@@ -1,0 +1,127 @@
+.wrapper {
+  display: block;
+}
+
+.toggle {
+  position: relative;
+  z-index: 60;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--text-primary);
+  transition:
+    transform var(--transition-base),
+    opacity var(--transition-fast);
+}
+
+.barTop {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.barBottom {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.barHidden {
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background-color: rgba(28, 26, 26, 0.45);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.overlayOpen {
+  opacity: 1;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 55;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  width: min(82vw, 320px);
+  height: 100dvh;
+  padding: calc(var(--header-height) + var(--space-6)) var(--space-8) var(--space-10);
+  background-color: var(--surface);
+  border-left: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition:
+    transform var(--transition-base),
+    visibility var(--transition-base);
+  overflow-y: auto;
+}
+
+.drawerOpen {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.link {
+  display: block;
+  padding: var(--space-3) 0;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+  transition: color var(--transition-fast);
+}
+
+.drawerCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-pill);
+  background-color: var(--accent-strong);
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    color: var(--accent-strong);
+  }
+}
+
+/* Ab lg wird das mobile Menü ausgeblendet. */
+@media (min-width: 1024px) {
+  .wrapper {
+    display: none;
+  }
+}

@@ -1,0 +1,83 @@
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding: var(--space-16) var(--container-pad) var(--space-12);
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.brandScript {
+  font-family: var(--font-script);
+  font-size: 2.25rem;
+  color: var(--color-blush-300);
+}
+
+.brandText {
+  max-width: 40ch;
+  font-size: 0.9375rem;
+  color: var(--footer-text);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--footer-heading);
+  margin-bottom: var(--space-4);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.link {
+  font-size: 0.9375rem;
+  color: var(--footer-text);
+  transition: color var(--transition-fast);
+  overflow-wrap: anywhere;
+}
+
+.address {
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 2;
+  color: var(--footer-text);
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-6) var(--container-pad);
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--footer-text);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    color: var(--color-blush-300);
+  }
+}
+
+@media (min-width: 768px) {
+  .inner {
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: var(--space-16);
+  }
+}

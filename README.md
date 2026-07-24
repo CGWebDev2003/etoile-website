@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ballettschule Étoile – Website
 
-## Getting Started
+Website der [Ballettschule Étoile](https://www.ballettschule-etoile.de/) in
+Leipzig – klassisches Ballett auf professionellem Niveau unter der Leitung von
+Primaballerina Oksana Kulchytska. Umgesetzt mit Next.js (App Router), React
+Server Components und CSS Modules im Blush-/Ballett-Design.
 
-First, run the development server:
+## Entwicklung
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Anschließend [http://localhost:3000](http://localhost:3000) öffnen.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Skripte
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Befehl          | Beschreibung                      |
+| --------------- | --------------------------------- |
+| `npm run dev`   | Entwicklungsserver                |
+| `npm run build` | Produktions-Build                 |
+| `npm run start` | Produktions-Server (nach `build`) |
+| `npm run lint`  | ESLint                            |
 
-## Learn More
+## Projektstruktur
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/                 Root-Layout, globale Styles (Tokens), Startseite
+components/
+  layout/            Header, mobiles Menü, Footer
+  sections/          Hero, Über uns, Kurse, Stundenplan, u. a.
+  ui/                Wiederverwendbare Bausteine (Button, Container, …)
+lib/content.ts       Zentrale Inhalte (Texte, Kurse, Stundenplan)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Konventionen
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Styling**: ausschließlich CSS Modules, ein Modul pro Komponente. Design
+  Tokens als CSS Custom Properties in `app/globals.css`.
+- **Responsiveness**: mobile-first, Breakpoints per `min-width`.
+- **Rendering**: Server Components als Default; `"use client"` nur für
+  interaktive Teile (mobiles Menü, Testimonial-Slider).
+- **Versionierung**: Semantic Versioning, Conventional Commits, `CHANGELOG.md`.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Details siehe [`CLAUDE.md`](./CLAUDE.md) und [`AGENTS.md`](./AGENTS.md).

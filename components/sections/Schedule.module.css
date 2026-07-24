@@ -1,0 +1,114 @@
+.section {
+  padding-block: var(--space-20);
+  background-color: var(--background);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.dayName {
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--surface-accent);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.classes {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-4);
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.classes .class:first-child {
+  border-top: none;
+}
+
+.time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-strong);
+  letter-spacing: 0.02em;
+}
+
+.classTitle {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.level {
+  font-size: 0.6875rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.note {
+  margin-top: var(--space-8);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 560px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+  }
+
+  .day {
+    border: none;
+    border-right: 1px solid var(--border);
+    border-radius: 0;
+  }
+
+  .grid .day:last-child {
+    border-right: none;
+  }
+
+  .dayName {
+    background-color: var(--surface-accent);
+  }
+}
