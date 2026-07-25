@@ -12,7 +12,7 @@ export type NavLink = {
 export const navLinks: readonly NavLink[] = [
   { label: "Start", href: "/" },
   { label: "Über uns", href: "/ueber-uns" },
-  { label: "Kurse", href: "/kurse" },
+  { label: "Kurse & Preise", href: "/kurse" },
   { label: "Erfolge", href: "/erfolge" },
   { label: "Kontakt", href: "/kontakt" },
 ];

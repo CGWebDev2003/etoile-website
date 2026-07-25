@@ -6,6 +6,29 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.11.0] – 2026-07-25
+
+### Changed
+
+- Hero-Bild um eine zweite, überlappende Bildkachel ergänzt: Neben der
+  eleganten Solo-Ballerina zeigt ein kleines Duo-Foto Kinder beim
+  verspielten Üben von Armhaltungen im Ballettsaal (echtes Foto von der
+  alten Website, aus der Unterricht-Unterseite). Ziel: sowohl die
+  elegante als auch die kindgerechte, verspielte Seite der Schule auf
+  einen Blick zeigen, statt nur ein einzelnes, statisch wirkendes Bild.
+
+### Added
+
+- `public/images/hero-kids.jpg` (500×375px, das Original der alten
+  Website – keine höhere Auflösung verfügbar).
+
+## [1.10.0] – 2026-07-25
+
+### Changed
+
+- Navigationspunkt "Kurse" in "Kurse & Preise" umbenannt, damit die
+  Preisliste beim Überfliegen der Hauptnavigation leichter auffindbar ist.
+
 ## [1.9.1] – 2026-07-25
 
 ### Fixed
