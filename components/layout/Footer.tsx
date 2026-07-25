@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { legalLinks, navLinks, school, socialLinks } from "@/lib/content";
 import styles from "./Footer.module.css";
 
@@ -26,7 +27,14 @@ export function Footer(): ReactNode {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brandCol}>
-          <span className={styles.brandScript}>Étoile</span>
+          <Image
+            src="/images/logo.png"
+            alt={`${school.name} – Logo`}
+            width={189}
+            height={136}
+            unoptimized
+            className={styles.logo}
+          />
           <p className={styles.brandText}>
             Ballettschule Étoile – klassisches Ballett auf professionellem Niveau
             in {school.city}. Grazie, Eleganz, Inspiration.

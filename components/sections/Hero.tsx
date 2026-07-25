@@ -1,16 +1,24 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { school } from "@/lib/content";
-import { BallerinaSilhouette } from "./BallerinaSilhouette";
 import styles from "./Hero.module.css";
 
 export function Hero(): ReactNode {
   return (
     <section className={styles.hero}>
       <Container className={styles.inner}>
-        <div className={styles.figure} aria-hidden="true">
-          <BallerinaSilhouette className={styles.silhouette} />
+        <div className={styles.figure}>
+          <Image
+            src="/images/hero.jpg"
+            alt="Tänzerin der Ballettschule Étoile in einer Arabesque auf der Bühne"
+            width={820}
+            height={900}
+            priority
+            sizes="(min-width: 1024px) 45vw, 90vw"
+            className={styles.photo}
+          />
         </div>
 
         <div className={styles.content}>
