@@ -6,6 +6,16 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.6.0] – 2026-07-25
+
+### Added
+
+- Team-Bereich auf `/ueber-uns` mit den echten sechs Pädagoginnen und
+  Pädagogen befüllt (Cornelia Richter, Anna Ber, Roman Slomski, Olga
+  Shalaevskaya, Margarita Yermachenko, Stephanie Hipper) inkl. Ausbildung,
+  bisherigen Engagements und aktuellem Unterrichtsschwerpunkt an der
+  Étoile – recherchiert von der alten Website.
+
 ## [1.5.0] – 2026-07-25
 
 ### Changed
