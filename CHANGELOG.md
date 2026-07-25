@@ -6,6 +6,19 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.7.0] – 2026-07-25
+
+### Added
+
+- Neue `Founder`-Sektion auf `/ueber-uns`, zwischen Schul-Text und Team
+  platziert: Kurzporträt der Schulleitung Oksana Kulchytska (Ausbildung
+  Kiew, Erste Solistin Leipziger Ballett unter Uwe Scholz, Gastsolistin
+  Staatsoper Prag, YOUTH GLOBE Award 2017, seit 2011 zertifizierte
+  Pilates-Trainerin) mit Foto.
+- Echte Porträtfotos für alle sechs Pädagoginnen/Pädagogen sowie für
+  Oksana Kulchytska ergänzt (aus den Originalbildern der alten Website),
+  eingebunden über `next/image`.
+
 ## [1.6.0] – 2026-07-25
 
 ### Added
