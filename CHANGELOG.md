@@ -6,6 +6,18 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.4.0] – 2026-07-25
+
+### Changed
+
+- Markenfarbe (`--color-blush-50` bis `-600` in `app/globals.css`) auf den
+  echten, aus Logo und Überschriften der alten Website per Pixel
+  ausgelesenen Farbton umgestellt (Basis `#A5123A`, vorher ein helleres,
+  generisches Rosé). Wirkt sich zentral auf Buttons, Akzent-Texte,
+  Hover-Zustände und den Testimonials-Hintergrund aus.
+- Nebeneffekt: Kontrast von weißem Button-Text steigt von 2,9:1 (WCAG-AA-
+  Fail) auf 7,6:1 (WCAG-AAA).
+
 ## [1.3.0] – 2026-07-25
 
 ### Added

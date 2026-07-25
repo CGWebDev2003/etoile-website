@@ -5,14 +5,14 @@
    ========================================================================== */
 
 :root {
-  /* --- Farbpalette (Blush / Ballett) --- */
-  --color-blush-50: #fdf5f4;
-  --color-blush-100: #fbe9e7;
-  --color-blush-200: #f6d3ce;
-  --color-blush-300: #efb6ae;
-  --color-blush-400: #e69a90;
-  --color-blush-500: #d97f74;
-  --color-blush-600: #c15f54;
+  /* --- Farbpalette (Étoile-Karmesin, aus Logo/Überschriften der Marke abgeleitet) --- */
+  --color-blush-50: #fbeff2;
+  --color-blush-100: #f4cdd7;
+  --color-blush-200: #eb98ae;
+  --color-blush-300: #e4587e;
+  --color-blush-400: #d61f50;
+  --color-blush-500: #a5123a;
+  --color-blush-600: #820d2c;
 
   --color-ink-900: #1c1a1a;
   --color-ink-800: #2b2726;
