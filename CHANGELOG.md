@@ -6,6 +6,17 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.9.1] – 2026-07-25
+
+### Fixed
+
+- Logo im Footer wurde durch fehlendes `align-self` im Column-Flex-Container
+  (`.brandCol`) auf die volle Spaltenbreite gestreckt und dadurch nicht
+  proportional verzerrt dargestellt. `align-self: flex-start` ergänzt.
+- Höher aufgelöste Logo-Datei eingesetzt (1477×1065px statt zuvor 189×136px,
+  vom Nutzer bereitgestellt), Bildreferenzen (`width`/`height`) entsprechend
+  angepasst.
+
 ## [1.9.0] – 2026-07-25
 
 ### Changed
