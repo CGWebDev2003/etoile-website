@@ -19,10 +19,9 @@
   gap: var(--space-3);
 }
 
-.brandScript {
-  font-family: var(--font-script);
-  font-size: 2.25rem;
-  color: var(--color-blush-300);
+.logo {
+  width: auto;
+  height: 52px;
 }
 
 .brandText {

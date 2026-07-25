@@ -6,6 +6,27 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.9.0] – 2026-07-25
+
+### Changed
+
+- Echtes Logo der Ballettschule Étoile in Header und Footer eingesetzt
+  (ersetzt das bisherige Inline-SVG-Platzhalterlogo). Auflösung 189×136px
+  – die einzige verfügbare Qualität, da das Logo auf der alten Website
+  nur eingebettet in PDFs (identisch auf jeder Seite) vorlag, nicht als
+  eigenständige Bilddatei. Ursprünglich mit weißem Hintergrund; für den
+  Einsatz auf hellem und dunklem Untergrund per Bildbearbeitung
+  transparent gemacht. Das `next/image`-Element lädt es mit
+  `unoptimized`, weil Next.js' automatische PNG-Optimierung das Bild in
+  eine Palette (Indexed-PNG) mit begrenzter Farbanzahl konvertiert und
+  dabei den transparenten Hintergrund mit den Kanten-Pixeln verschmilzt
+  – sichtbar als grauer Kasten hinter dem Logo auf dunklem Grund.
+- Hero-Illustration (Silhouette) durch ein echtes Bühnenfoto ersetzt:
+  Ballerina in einer Arabeske en pointe, entnommen aus dem Kontakt-PDF
+  der alten Website. Original 1950×900px, auf 820×900px zugeschnitten,
+  um in den Hero-Bildbereich zu passen, ohne die Pose abzuschneiden.
+  `BallerinaSilhouette`-Komponente entfernt, da nicht mehr verwendet.
+
 ## [1.8.0] – 2026-07-25
 
 ### Changed
