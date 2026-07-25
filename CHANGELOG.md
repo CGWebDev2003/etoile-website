@@ -6,6 +6,19 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.12.0] – 2026-07-25
+
+### Changed
+
+- Die kleine, überlappende Duo-Bildkachel im Hero (Kinder beim Üben im
+  Ballettsaal) durch ein echtes, hochwertigeres Bühnenfoto ersetzt: das
+  komplette Ensemble bei einer Auftritt-Vorstellung mit floralen Reifen
+  (Original-Homepage-Banner der alten Website, 1950×900px). Beide Bilder
+  – elegante Solo-Ballerina und das Ensemble-Bühnenfoto – stehen jetzt
+  gleichberechtigt nebeneinander (ab 1024px) bzw. gestapelt (mobil),
+  statt eines kleinen Insets, damit auch das Gruppenfoto in seiner
+  Detailfülle erkennbar bleibt.
+
 ## [1.11.0] – 2026-07-25
 
 ### Changed
