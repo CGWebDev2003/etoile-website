@@ -179,23 +179,30 @@ export type Testimonial = {
   readonly role: string;
 };
 
+/** Echte Google-Bewertungen der Ballettschule Étoile (jeweils 5 von 5 Sternen). */
 export const testimonials: readonly Testimonial[] = [
   {
     quote:
-      "Meine Tochter blüht seit dem ersten Tag auf. Die liebevolle und zugleich professionelle Art von Frau Kulchytska ist einzigartig.",
-    author: "Katrin M.",
+      "Eine fantastische Ballettschule! Eines meiner Mädchen tanzt bereits seit fast vier Jahren dort, und dieses Jahr hatte auch meine Jüngere ihr Bühnendebüt – ein ganz besonderer Moment. Es ist wunderschön zu sehen, wie sich die Kinder entwickeln, mit wie viel Liebe sie begleitet werden und wie spürbar diese Hingabe jeden Tag ist. Es ist ein großes Geschenk, unsere Kinder auf dieser Reise begleiten zu dürfen. Ein herzliches Dankeschön an alle Lehrerinnen und Lehrer, die täglich so viel Liebe und Energie investieren. Es berührt uns jedes Jahr aufs Neue, unsere Kinder auf der Bühne zu sehen – oft mit Tränen in den Augen. Danke für alles!",
+    author: "Teona Fritschka",
+    role: "Mutter zweier Schülerinnen",
+  },
+  {
+    quote:
+      "Eine tolle Ballettschule. Motivierte und professionelle Balletttlehrerinnen, die den Kindern mit Liebe und der nötigen Disziplin das Tanzen und die Liebe zum Ballett beibringen. Unsere Tochter ist seit mehreren Jahren dabei und geht immer mit Begeisterung zum Unterricht.",
+    author: "Kornelia Klöpper-Sadowsky",
     role: "Mutter einer Schülerin",
   },
   {
     quote:
-      "Endlich eine Schule, in der klassisches Ballett wirklich unterrichtet wird – mit Herz, Disziplin und viel Freude an der Bewegung.",
-    author: "Sophie L.",
-    role: "Erwachsenenkurs",
+      "Unser Enkelkind ist seit nun 4 Jahren in der Ballettschule und es gefällt ihr sehr gut. Wir freuen uns schon immer auf das nächste Galakonzert. Es ist unglaublich, was Oksana mit den kleinen leistet. Sie tanzen schon wie die Profis. Manches Fernsehballett könnte da noch lernen.",
+    author: "Siegfried Dietze",
+    role: "Großvater einer Schülerin",
   },
   {
     quote:
-      "Die Vorbereitung auf die Aufnahmeprüfung war hervorragend. Ohne dieses Training hätte ich es nicht geschafft.",
-    author: "Marie K.",
-    role: "ehemalige Schülerin",
+      "Sehr professionelle, aber auch liebevolle Betreuung der Kinder beim Balletlernen. Angemessene monatliche Preise, tolle Räumlichkeiten, zentrale Lage. Jedes Jahr ein Ballettgala, wo Kinder ihr Können auf einer Bühne vorstellen können, total klasse!",
+    author: "Anastasia",
+    role: "Google-Rezension",
   },
 ];
