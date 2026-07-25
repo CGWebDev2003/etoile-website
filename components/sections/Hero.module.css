@@ -142,4 +142,8 @@
     width: 100%;
     max-width: 380px;
   }
+
+  .photoDuo {
+    width: 252px;
+  }
 }
