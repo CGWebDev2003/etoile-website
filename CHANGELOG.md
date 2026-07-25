@@ -6,6 +6,26 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.8.0] – 2026-07-25
+
+### Changed
+
+- Kursangebot (`lib/content.ts` → `courses`) von 4 generischen
+  Platzhalter-Kategorien auf die 9 echten Kursarten der alten Website
+  umgestellt (Kinderballett, Pre-Ballett, Klassisches Ballett,
+  Förderklasse, Ballett für Erwachsene, Stretching und Kräftigung,
+  Spitzentraining, Repertoire, Einzelunterricht). Erfundene Erwähnung von
+  "Onlineunterricht" entfernt.
+- `Courses` bekommt eine optionale `limit`-Prop; die Startseite zeigt nur
+  4 Kurse als Vorschau, `/kurse` weiterhin alle.
+
+### Added
+
+- Vollständige, echte Preisliste (`lib/content.ts` → `pricing`) aus der
+  alten Preisliste.pdf übernommen: Gruppenunterricht 45/60 und 75/90
+  Minuten, Spitzentraining für Kinder, 10er-Karten, Privatunterricht,
+  Aufnahmegebühr, Geschwisterermäßigung und Probestunden-Konditionen.
+
 ## [1.7.0] – 2026-07-25
 
 ### Added

@@ -66,18 +66,32 @@ export type Course = {
 
 export const courses: readonly Course[] = [
   {
-    id: "kinder",
+    id: "kinderballett",
     title: "Kinderballett",
     age: "ab 3 Jahren",
     description:
       "Spielerischer Einstieg in die Welt des Balletts. Kleine Tänzerinnen und Tänzer schulen Haltung, Musikalität und Körpergefühl.",
   },
   {
-    id: "jugend",
-    title: "Jugend & Fortgeschrittene",
-    age: "8 – 18 Jahre",
+    id: "pre-ballett",
+    title: "Pre-Ballett",
+    age: "ab 6 Jahren",
     description:
-      "Fundierte klassische Ausbildung an der Stange und im Raum – bis hin zu Spitzentanz, Repertoire und Wettbewerbsvorbereitung.",
+      "Erste Schritte an der Stange – Musikalität, Koordination und Körpergefühl werden gezielt aufgebaut.",
+  },
+  {
+    id: "klassisches-ballett",
+    title: "Klassisches Ballett",
+    age: "ab 9 Jahren",
+    description:
+      "Fundierte klassische Ausbildung an der Stange und im Raum, aufbauend auf den Grundlagen des Pre-Ballett.",
+  },
+  {
+    id: "foerderklasse",
+    title: "Förderklasse",
+    age: "nach Eignung",
+    description:
+      "Vertiefte Ausbildung für besonders talentierte und motivierte Tänzerinnen und Tänzer – inklusive Vorbereitung auf Aufnahmeprüfungen an staatlichen Ballettschulen, Wettbewerbe und Vortanzen.",
   },
   {
     id: "erwachsene",
@@ -87,11 +101,32 @@ export const courses: readonly Course[] = [
       "Eleganz in jedem Alter. Klassisches Training für Anmut, Kraft und Beweglichkeit – in entspannter, motivierender Atmosphäre.",
   },
   {
-    id: "spitze",
-    title: "Spitzen- & Privattraining",
-    age: "nach Niveau",
+    id: "stretching",
+    title: "Stretching und Kräftigung",
+    age: "für alle Niveaus",
     description:
-      "Individuelle Förderung im Einzel- oder Onlineunterricht sowie gezieltes Spitzentraining für ambitionierte Tänzerinnen.",
+      "Gezieltes Dehn- und Krafttraining als Ergänzung zum Ballettunterricht.",
+  },
+  {
+    id: "spitzentraining",
+    title: "Spitzentraining",
+    age: "für Kinder und Erwachsene",
+    description:
+      "Spitzentanz-Training nach individuellem Leistungsstand, aufbauend auf sicherer klassischer Technik.",
+  },
+  {
+    id: "repertoire",
+    title: "Repertoire",
+    age: "für Fortgeschrittene",
+    description:
+      "Erarbeitung von Variationen aus dem klassischen und neoklassischen Repertoire.",
+  },
+  {
+    id: "einzelunterricht",
+    title: "Einzelunterricht",
+    age: "nach Vereinbarung",
+    description:
+      "Individuelle Förderung im Einzelunterricht – für gezielte technische Arbeit oder Wettbewerbsvorbereitung.",
   },
 ];
 
@@ -170,10 +205,7 @@ export type TeamMember = {
   readonly photo: string;
 };
 
-/**
- * Team-Vorstellung (ohne Schulleitung, die bereits in `school`/`About` steht).
- * Wird in der Inhalts-Phase mit den echten Pädagoginnen und Pädagogen befüllt.
- */
+/** Team-Vorstellung (ohne Schulleitung, die bereits in `school`/`Founder` steht). */
 export const team: readonly TeamMember[] = [
   {
     id: "cornelia-richter",
@@ -232,8 +264,71 @@ export type PricingGroup = {
   readonly rows: readonly PricingRow[];
 };
 
-/** Preisliste. Wird in der Inhalts-Phase befüllt. */
-export const pricing: readonly PricingGroup[] = [];
+/** Preisliste der Ballettschule Étoile. */
+export const pricing: readonly PricingGroup[] = [
+  {
+    id: "gruppe-45",
+    title: "Gruppenunterricht – 45/60 Minuten (monatlich)",
+    rows: [
+      { id: "g45-1", label: "1× pro Woche", price: "48,00 €" },
+      { id: "g45-2", label: "2× pro Woche", price: "75,00 €" },
+      { id: "g45-3", label: "3× pro Woche", price: "100,00 €" },
+    ],
+  },
+  {
+    id: "gruppe-75",
+    title: "Gruppenunterricht – 75/90 Minuten (monatlich)",
+    rows: [
+      { id: "g75-1", label: "1× pro Woche", price: "52,00 €" },
+      { id: "g75-2", label: "2× pro Woche", price: "85,00 €" },
+      { id: "g75-3", label: "3× pro Woche", price: "110,00 €" },
+      { id: "g75-4", label: "4× pro Woche", price: "135,00 €" },
+      { id: "g75-5", label: "5× pro Woche", price: "150,00 €" },
+    ],
+  },
+  {
+    id: "spitze-kinder",
+    title: "Spitzentraining für Kinder (monatlich)",
+    rows: [
+      { id: "sk-1", label: "1× pro Woche", price: "18,00 €" },
+      { id: "sk-2", label: "2× pro Woche", price: "30,00 €" },
+    ],
+  },
+  {
+    id: "10er-karten",
+    title: "10er-Karten (nur für Erwachsene)",
+    rows: [
+      { id: "karte-45", label: "45/60 Minuten", price: "150,00 €" },
+      { id: "karte-75", label: "75/90 Minuten", price: "170,00 €" },
+      { id: "karte-spitze", label: "Spitzentraining, ca. 30 Minuten", price: "70,00 €" },
+      { id: "einzel-spitze", label: "Einzelstunde Spitzentraining", price: "18,00 €" },
+    ],
+  },
+  {
+    id: "privatunterricht",
+    title: "Privatunterricht (für Mitglieder)",
+    rows: [
+      { id: "priv-kind-solo", label: "Kinder, 60 Min., Solo", price: "50,00 €" },
+      { id: "priv-kind-duo", label: "Kinder, 60 Min., Duo", price: "70,00 €" },
+      { id: "priv-erw-solo", label: "Erwachsene, 60 Min., Solo", price: "60,00 €" },
+      { id: "priv-erw-duo", label: "Erwachsene, 60 Min., Duo", price: "80,00 €" },
+    ],
+  },
+  {
+    id: "gut-zu-wissen",
+    title: "Gut zu wissen",
+    rows: [
+      { id: "aufnahme", label: "Aufnahmegebühr (einmalig)", price: "18,00 €" },
+      {
+        id: "geschwister",
+        label: "Geschwisterkinder (ab dem 2. Kind)",
+        price: "10 % Ermäßigung",
+      },
+      { id: "probe-kind", label: "Probestunde für Kinder", price: "kostenfrei" },
+      { id: "probe-erw", label: "Probestunde für Erwachsene", price: "10,00 €" },
+    ],
+  },
+];
 
 export type AchievementEntry = {
   readonly id: string;
