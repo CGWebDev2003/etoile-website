@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { navLinks, school } from "@/lib/content";
 import { MobileMenu } from "./MobileMenu";
 import styles from "./Header.module.css";
@@ -9,8 +10,15 @@ export function Header(): ReactNode {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link href="/" className={styles.brand} aria-label={`${school.name} – Startseite`}>
-          <span className={styles.brandScript}>Étoile</span>
-          <span className={styles.brandSub}>Ballettschule {school.city}</span>
+          <Image
+            src="/images/logo.png"
+            alt={`${school.name} – Logo`}
+            width={189}
+            height={136}
+            priority
+            unoptimized
+            className={styles.logo}
+          />
         </Link>
 
         <nav className={styles.desktopNav} aria-label="Hauptnavigation">
