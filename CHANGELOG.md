@@ -6,6 +6,13 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.10.0] – 2026-07-25
+
+### Changed
+
+- Navigationspunkt "Kurse" in "Kurse & Preise" umbenannt, damit die
+  Preisliste beim Überfliegen der Hauptnavigation leichter auffindbar ist.
+
 ## [1.9.1] – 2026-07-25
 
 ### Fixed
