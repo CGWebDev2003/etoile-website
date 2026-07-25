@@ -7,6 +7,12 @@ import styles from "@/components/sections/LegalPage.module.css";
 export const metadata: Metadata = {
   title: "Impressum",
   description: "Impressum der Ballettschule Étoile Leipzig gemäß § 5 TMG.",
+  openGraph: {
+    title: "Impressum | Ballettschule Étoile",
+    description: "Impressum der Ballettschule Étoile Leipzig gemäß § 5 TMG.",
+    locale: "de_DE",
+    type: "website",
+  },
 };
 
 export default function ImpressumPage(): ReactNode {

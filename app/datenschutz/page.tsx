@@ -7,6 +7,12 @@ import styles from "@/components/sections/LegalPage.module.css";
 export const metadata: Metadata = {
   title: "Datenschutz",
   description: "Datenschutzerklärung der Ballettschule Étoile Leipzig.",
+  openGraph: {
+    title: "Datenschutz | Ballettschule Étoile",
+    description: "Datenschutzerklärung der Ballettschule Étoile Leipzig.",
+    locale: "de_DE",
+    type: "website",
+  },
 };
 
 export default function DatenschutzPage(): ReactNode {

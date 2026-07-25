@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Über uns",
   description:
     "Lernen Sie die Ballettschule Étoile, Primaballerina Oksana Kulchytska und unser Pädagogen-Team kennen.",
+  openGraph: {
+    title: "Über uns | Ballettschule Étoile",
+    description:
+      "Lernen Sie die Ballettschule Étoile, Primaballerina Oksana Kulchytska und unser Pädagogen-Team kennen.",
+    locale: "de_DE",
+    type: "website",
+  },
 };
 
 export default function UeberUnsPage(): ReactNode {
