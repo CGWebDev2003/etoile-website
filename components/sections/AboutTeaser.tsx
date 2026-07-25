@@ -11,14 +11,14 @@ export function AboutTeaser(): ReactNode {
       <Container narrow className={styles.inner}>
         <SectionHeading
           eyebrow="unsere Schule"
-          title="Klassisches Ballett mit Haltung und Herz"
+          title="Ballett auf professionellem Niveau"
           align="start"
         />
         <p className={styles.text}>
-          Die {school.name} in {school.city} steht unter der Leitung von{" "}
-          {school.director} für klassisches Ballett auf professionellem
-          Niveau – mit einem erfahrenen Pädagogen-Team für Kinder,
-          Jugendliche und Erwachsene.
+          Die {school.name} in {school.city} gehört zu den erfolgreichsten
+          Ballettschulen der Stadt – gegründet von der Primaballerina{" "}
+          {school.director}. Wir sind offen für alle: für jedes Niveau und
+          jedes Alter, vom Anfänger bis zum Profi.
         </p>
         <Link href="/ueber-uns" className={styles.link}>
           Mehr über uns
