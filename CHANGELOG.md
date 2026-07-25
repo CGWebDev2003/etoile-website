@@ -6,6 +6,36 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.2.0] – 2026-07-25
+
+### Added
+
+- Mehrseiten-Struktur statt Ein-Seiten-Layout: `/ueber-uns` (Schule, Oksana
+  Kulchytska, Team), `/kurse` (Unterricht, Stundenplan, Preise), `/erfolge`
+  (Highlights + Chronik), `/kontakt`, `/impressum`, `/datenschutz`.
+- Header und Footer wandern in das Root-Layout (`app/layout.tsx`) und werden
+  so für alle Routen gemeinsam gerendert statt pro Seite importiert zu werden.
+- Neue Sektionen `AboutTeaser` und `ContactCta` als schlanke Startseiten-
+  Teaser mit Verlinkung auf die jeweilige Detailseite.
+- Neue Sektionen `Team`, `Pricing` und `AchievementsArchive` mit
+  funktionsfähigem leerem Zustand ("Inhalt folgt in Kürze"), bereit für die
+  Inhalts-Phase.
+- Footer zeigt Impressum/Datenschutz als separate Rechtslinks-Zeile,
+  getrennt von der Hauptnavigation.
+- `Button` nutzt für interne Pfade automatisch `next/link` (Prefetching),
+  externe Aktionen (`tel:`, `mailto:`) bleiben `<a>`.
+
+### Changed
+
+- `navLinks` verweisen auf echte Routen statt auf Anker-Links
+  (`/kurse` statt `#kurse`).
+- Startseite auf Teaser-Umfang reduziert (Hero, Kursübersicht,
+  Erfolgs-Highlights, Testimonials, Kontakt-CTA); vollständiger Stundenplan
+  und Kontaktdetails leben jetzt auf eigenen Seiten.
+- `html` erhält `overflow-x: hidden` zusätzlich zu `body`, um horizontalen
+  Overflow durch das mobile Off-Canvas-Menü zu verhindern (betraf zuvor
+  jede Seite, da der Header nun global ist).
+
 ## [1.1.0] – 2026-07-24
 
 ### Removed

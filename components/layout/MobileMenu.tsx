@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
+import Link from "next/link";
 import type { NavLink } from "@/lib/content";
 import styles from "./MobileMenu.module.css";
 
@@ -70,25 +71,25 @@ export function MobileMenu({ links }: MobileMenuProps): ReactNode {
         <ul className={styles.list}>
           {links.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className={styles.link}
                 onClick={() => setOpen(false)}
                 tabIndex={open ? 0 : -1}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
-        <a
-          href="#kontakt"
+        <Link
+          href="/kontakt"
           className={styles.drawerCta}
           onClick={() => setOpen(false)}
           tabIndex={open ? 0 : -1}
         >
           Probestunde buchen
-        </a>
+        </Link>
       </nav>
     </div>
   );

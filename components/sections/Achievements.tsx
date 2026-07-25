@@ -6,7 +6,7 @@ import styles from "./Achievements.module.css";
 
 export function Achievements(): ReactNode {
   return (
-    <section className={styles.section} id="erfolge">
+    <section className={styles.section}>
       <Container>
         <SectionHeading eyebrow="Auszeichnungen" title="Erfolge unserer Schule" />
 

@@ -6,7 +6,7 @@ import styles from "./Contact.module.css";
 
 export function Contact(): ReactNode {
   return (
-    <section className={styles.section} id="kontakt">
+    <section className={styles.section}>
       <Container>
         <div className={styles.card}>
           <div className={styles.intro}>

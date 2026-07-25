@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { navLinks, school } from "@/lib/content";
+import Link from "next/link";
+import { legalLinks, navLinks, school } from "@/lib/content";
 import styles from "./Footer.module.css";
 
 export function Footer(): ReactNode {
@@ -21,9 +22,9 @@ export function Footer(): ReactNode {
           <ul className={styles.list}>
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className={styles.link}>
+                <Link href={link.href} className={styles.link}>
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -51,6 +52,17 @@ export function Footer(): ReactNode {
         <p>
           © {year} {school.name}. Alle Rechte vorbehalten.
         </p>
+        <nav className={styles.legalNav} aria-label="Rechtliches">
+          <ul className={styles.legalList}>
+            {legalLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className={styles.legalLink}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </footer>
   );
