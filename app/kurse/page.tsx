@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: "Kurse",
   description:
     "Ballettkurse für jedes Alter, Stundenplan und Preise der Ballettschule Étoile Leipzig.",
+  openGraph: {
+    title: "Kurse | Ballettschule Étoile",
+    description:
+      "Ballettkurse für jedes Alter, Stundenplan und Preise der Ballettschule Étoile Leipzig.",
+    locale: "de_DE",
+    type: "website",
+  },
 };
 
 export default function KursePage(): ReactNode {

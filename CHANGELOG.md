@@ -6,6 +6,22 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.4.1] – 2026-07-25
+
+### Added
+
+- Seitenspezifische Open-Graph-Vorschaudaten (Titel, Beschreibung) für alle
+  6 Unterseiten (`/ueber-uns`, `/kurse`, `/erfolge`, `/kontakt`,
+  `/impressum`, `/datenschutz`). Social-Media-Vorschauen zeigen nun die
+  jeweilige Seite statt generisch immer die Startseite.
+
+### Verified
+
+- Alle Seitentitel, Meta-Beschreibungen und Open-Graph-Angaben geprüft:
+  ausschließlich Name, Region und echte Domain des Zielunternehmens
+  (Ballettschule Étoile Leipzig, ballettschule-etoile.de), kein alter
+  Firmenname oder alte Adresse im gesamten Build-Output.
+
 ## [1.4.0] – 2026-07-25
 
 ### Changed
