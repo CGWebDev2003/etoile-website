@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { About } from "@/components/sections/About";
+import { Founder } from "@/components/sections/Founder";
 import { Team } from "@/components/sections/Team";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function UeberUnsPage(): ReactNode {
   return (
     <>
       <About />
+      <Founder />
       <Team />
     </>
   );

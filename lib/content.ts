@@ -29,6 +29,7 @@ export const school = {
   tagline: "Grazie, Eleganz, Inspiration",
   director: "Oksana Kulchytska",
   directorRole: "Primaballerina & Schulleitung",
+  directorPhoto: "/images/team/oksana-kulchytska.jpg",
   address: {
     street: "Humboldtstraße 9",
     zip: "04105",
@@ -166,6 +167,7 @@ export type TeamMember = {
   readonly name: string;
   readonly role: string;
   readonly bio: string;
+  readonly photo: string;
 };
 
 /**
@@ -178,36 +180,42 @@ export const team: readonly TeamMember[] = [
     name: "Cornelia Richter",
     role: "Ballett für Erwachsene",
     bio: "Ausgebildet an der Palucca Schule Dresden unter Gret Palucca, tanzte Cornelia Richter an der Semperoper Dresden, am Euroballett Luxemburg und am Ballet National de Nancy et de Lorraine – u. a. in „Schwanensee“, „Der Nussknacker“ und „Giselle“. Ihr Tanzpädagogik-Diplom erwarb sie am CEFEDEM Lyon; seit 2001 arbeitet sie zudem als Physiotherapeutin für das Leipziger Ballett. An der Étoile unterrichtet sie Ballett für Erwachsene.",
+    photo: "/images/team/cornelia-richter.jpg",
   },
   {
     id: "anna-ber",
     name: "Anna Ber",
     role: "Pre-Ballett & klassisches Ballett",
     bio: "Anna Ber wurde in Russland geboren und zur Solistin des Kinderballett-Theaters Perm ausgebildet. Ihr Diplom als Tanz- und Ballettpädagogin erhielt sie an der Staatlichen Hochschule für Tanzpädagogik und Choreographie Perm, bevor sie als Solistin und Choreografin der Ballettcompany „Crush“ sowie als Pädagogin an einer der größten privaten Ballettschulen Russlands arbeitete. An der Étoile unterrichtet sie Pre-Ballett und klassisches Ballett für Kinder und Erwachsene.",
+    photo: "/images/team/anna-ber.jpg",
   },
   {
     id: "roman-slomski",
     name: "Roman Slomski",
     role: "Ballettmeister",
     bio: "Roman Slomski, geboren in Gdańsk, tanzte als Solist an der Baltischen Oper und am Nationaltheater Warschau, bevor er 1991 ein Engagement am Theater Dortmund antrat. Seit 1998 ist er als Ballettmeister tätig, unter anderem als erster Ballettmeister des Leipziger Balletts, und arbeitete mit Choreografen wie John Neumeier, Maurice Béjart, George Balanchine und Uwe Scholz.",
+    photo: "/images/team/roman-slomski.jpg",
   },
   {
     id: "olga-shalaevskaya",
     name: "Olga Shalaevskaya",
     role: "Klassisches Ballett",
     bio: "Olga Shalaevskaya wurde in Moskau geboren und an der Ballettschule des Bolschoi-Theaters mit Auszeichnung ausgebildet. Sie tanzte am Ballett der Semperoper Dresden und am Leipziger Ballett der Oper Leipzig unter Uwe Scholz und Paul Chalmer, bevor sie ihr Tanzpädagogik-Studium an der Akademie der Bolschoi-Ballettschule Moskau abschloss. An der Étoile unterrichtet sie klassisches Ballett für Kinder und Erwachsene.",
+    photo: "/images/team/olga-shalaevskaya.jpg",
   },
   {
     id: "margarita-yermachenko",
     name: "Margarita Yermachenko",
     role: "Pre-Ballett, Jungs-Tanz & Dehnung",
     bio: "Margarita Yermachenko begann im Alter von sechs Jahren mit klassischem Tanz und Volkstanz in Minsk und studierte später Jazztanz, Tanzpädagogik und Choreografie an der Weißrussischen Staatlichen Universität für Kultur und Kunst. Sie sammelte Bühnenerfahrung in China und arbeitete u. a. mit dem Weißrussischen Staatlichen Jugendtheater. An der Étoile unterrichtet sie Pre-Ballett, einen Tanzkurs für Jungs sowie Dehnung und Bodengymnastik.",
+    photo: "/images/team/margarita-yermachenko.jpg",
   },
   {
     id: "stephanie-hipper",
     name: "Stephanie Hipper",
     role: "Klassisches Ballett",
     bio: "Stephanie Hipper, aufgewachsen im Kanton Zürich, erhielt mit 16 Jahren einen Elevinnen-Vertrag an der Oper Leipzig und vertrat ihre Schule 1994 beim Prix de Lausanne. Als festes Mitglied des Leipziger Balletts tanzte sie unter Professor Uwe Scholz u. a. in „Die Schöpfung“ und „Der Sommernachtstraum“. Nach Jahren als Leiterin eigener Kinder-Ballettgruppen unterrichtet sie seit März 2024 an der Étoile.",
+    photo: "/images/team/stephanie-hipper.jpg",
   },
 ];
 
