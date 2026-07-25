@@ -6,16 +6,16 @@ import styles from "./About.module.css";
 
 const highlights: readonly { title: string; text: string }[] = [
   {
-    title: "Professionelle Leitung",
-    text: "Ausbildung durch Primaballerina Oksana Kulchytska und ein erfahrenes Pädagogen-Team.",
+    title: "Gegründet von einer Primaballerina",
+    text: "Oksana Kulchytska gründete die Schule und unterrichtet gemeinsam mit einem erfahrenen, engagierten Pädagogen-Team.",
   },
   {
     title: "Für jedes Alter",
-    text: "Vom ersten Plié mit drei Jahren bis zum Spitzentanz und dem Training für Erwachsene.",
+    text: "Vom ersten Plié mit drei Jahren bis zum Spitzentanz und dem Training für Erwachsene – jedes Niveau ist willkommen.",
   },
   {
     title: "Bühne & Wettbewerb",
-    text: "Auftritte an der Oper Leipzig sowie Erfolge bei nationalen und internationalen Wettbewerben.",
+    text: "Mehrfach als „Beste Ballettschule“ ausgezeichnet, mit gemeinsamen Auftritten an der Oper Leipzig.",
   },
 ];
 
@@ -25,22 +25,34 @@ export function About(): ReactNode {
       <Container className={styles.inner}>
         <SectionHeading
           eyebrow="unsere Schule"
-          title="Tanzen, das durch das Leben trägt"
+          title="Professionelle Ausbildung und Ballett für alle"
           align="start"
         />
         <div className={styles.grid}>
           <div className={styles.text}>
             <p>
-              Die {school.name} in {school.city} steht für klassisches Ballett
-              in seiner schönsten Form. Wir vermitteln Technik und Ausdruck mit
-              Geduld und Leidenschaft – in einer Atmosphäre, in der sich jede
-              Tänzerin und jeder Tänzer wohlfühlt und über sich hinauswächst.
+              Die {school.name} in {school.city} gehört zu den erfolgreichsten
+              Ballettschulen der Stadt und ist auch deutschlandweit bekannt.
+              Gegründet von der Primaballerina {school.director}, bieten wir
+              klassisches Ballett auf professionellem Niveau – getragen von
+              einem erfahrenen und engagierten Team aus qualifizierten
+              Pädagoginnen und Pädagogen.
             </p>
             <p>
-              Ob als liebevoller erster Kontakt mit dem Ballett, als ambitionierte
-              Ausbildung mit Spitzentanz und Repertoire oder als Ausgleich für
-              Erwachsene: Bei uns findet jedes Talent seinen Weg – individuell
-              begleitet und professionell gefördert.
+              Unsere Schülerinnen und Schüler sind mehrfache Preisträgerinnen
+              und Preisträger zahlreicher nationaler und internationaler
+              Wettbewerbe und wurden bereits mehrfach als „Beste
+              Ballettschule“ ausgezeichnet. Jedes Jahr werden mehrere Kinder
+              aus unserer Schule erfolgreich an staatlichen Ballettschulen
+              aufgenommen oder direkt auf professionelle Bühnen vorbereitet –
+              und tanzen gemeinsam mit Profitänzern auf der Bühne der Oper
+              Leipzig, unter anderem im „Nussknacker“.
+            </p>
+            <p>
+              Gleichzeitig ist unsere Ballettschule offen für alle: für jedes
+              Niveau und alle Altersgruppen, vom Anfänger bis zum Profi. Wir
+              freuen uns auf alle Ballettbegeisterten – und die, die es werden
+              wollen!
             </p>
           </div>
 

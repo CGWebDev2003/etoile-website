@@ -6,6 +6,18 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.5.0] – 2026-07-25
+
+### Changed
+
+- "Über uns"-Text (`About`) und Startseiten-Teaser (`AboutTeaser`) im
+  Wortlaut der alten Website neu geschrieben: gleicher warmer,
+  wir-bezogener Ton wie in der ursprünglichen Selbstbeschreibung, inkl.
+  Gründungsgeschichte, Wettbewerbserfolgen, Oper-Leipzig-Kooperation und
+  der einladenden Schlusszeile ("Wir freuen uns auf alle
+  Ballettbegeisterten – und die, die es werden wollen!").
+- Highlights-Karten und Section-Überschriften entsprechend angepasst.
+
 ## [1.4.1] – 2026-07-25
 
 ### Added
