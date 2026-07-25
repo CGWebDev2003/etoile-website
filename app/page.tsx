@@ -11,7 +11,7 @@ export default function Home(): ReactNode {
     <>
       <Hero />
       <AboutTeaser />
-      <Courses />
+      <Courses limit={4} />
       <Achievements />
       <Testimonials />
       <ContactCta />
