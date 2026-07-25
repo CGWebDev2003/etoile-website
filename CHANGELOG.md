@@ -6,6 +6,19 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.2.2] – 2026-07-25
+
+### Changed
+
+- Auszeichnungen-Highlights auf der Startseite durch echte Erfolge ersetzt
+  (mehrfache "Beste Ballettschule"-Auszeichnung, Kooperation mit der Oper
+  Leipzig, Aufnahmen an der Palucca Hochschule Dresden und der Staatlichen
+  Ballettschule Berlin, 10+ Jahre Bühnenerfahrung) statt der bisherigen
+  schwachen Platzhalter-Zahlen ("1.", "Ø").
+- `/erfolge` mit der vollständigen, recherchierten Erfolgschronik seit 2017
+  befüllt (Wettbewerbsplatzierungen, Schüleraufnahmen an staatlichen
+  Ballettschulen, Presse- und Bühnenmomente).
+
 ## [1.2.1] – 2026-07-25
 
 ### Changed

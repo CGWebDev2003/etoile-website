@@ -129,10 +129,20 @@ export type Achievement = {
 };
 
 export const achievements: readonly Achievement[] = [
-  { value: "1.", label: "Preise bei nationalen & internationalen Wettbewerben" },
-  { value: "10+", label: "Jahre Bühnenerfahrung der Schulleitung" },
-  { value: "Oper", label: "Auftritte an der Oper Leipzig – u. a. Nussknacker" },
-  { value: "Ø", label: "Aufnahmen an staatlichen Ballettschulen jedes Jahr" },
+  {
+    value: "Beste",
+    label: "Ballettschule – mehrfach ausgezeichnet bei internationalen Wettbewerben",
+  },
+  {
+    value: "Oper",
+    label: "Gemeinsame Bühnenauftritte mit der Oper Leipzig, u. a. im „Nussknacker“",
+  },
+  {
+    value: "Staatlich",
+    label:
+      "Schülerinnen aufgenommen an der Palucca Hochschule Dresden und der Staatlichen Ballettschule Berlin",
+  },
+  { value: "10+", label: "Jahre Bühnenerfahrung der Schulleitung Oksana Kulchytska" },
 ];
 
 export type TeamMember = {
@@ -171,7 +181,151 @@ export type AchievementEntry = {
 };
 
 /** Vollständige Erfolgschronik für /erfolge (Highlights bleiben in `achievements`). */
-export const achievementArchive: readonly AchievementEntry[] = [];
+export const achievementArchive: readonly AchievementEntry[] = [
+  {
+    id: "2025-fuerstenfeldbruck",
+    year: "2025",
+    title: "Deutscher Ballettwettbewerb Fürstenfeldbruck – 1. und 2. Platz (Kategorie Mini)",
+  },
+  {
+    id: "2025-spera",
+    year: "2025",
+    title:
+      "Internationaler Ballettwettbewerb SPERA – mehrere Platzierungen und Einladungen zur Probewoche an der Staatlichen Ballettschule Berlin",
+  },
+  {
+    id: "2025-selb",
+    year: "2025",
+    title: "Deutscher Ballettwettbewerb Selb – 4× 1. Platz, 2× 2. Platz",
+  },
+  {
+    id: "2025-idc-berlin",
+    year: "2025",
+    title:
+      "IDC Berlin (Internationaler Ballettwettbewerb) – 7× 1. Platz, 2× 2. Platz, 1× 3. Platz, Sonderpreise „Beste Teamarbeit“ und „Bestes Talent“",
+  },
+  {
+    id: "2025-palucca-freyja",
+    year: "2025",
+    title: "Schülerin an der Palucca Hochschule für Tanz Dresden aufgenommen",
+  },
+  {
+    id: "2024-venlo",
+    year: "2024",
+    title: "World Dance Contest Venlo (Niederlande) – 1× 1. Platz, 1× 2. Platz, 2× 3. Platz",
+  },
+  {
+    id: "2024-ave-bohemia",
+    year: "2024",
+    title:
+      "Internationaler Ballettwettbewerb Ave Bohemia Prag – Grand Prix, 11× 1. Platz, 1× 3. Platz, mit 41 teilnehmenden Kindern als beste Ballettschule ausgezeichnet",
+  },
+  {
+    id: "2024-palucca-anouk",
+    year: "2024",
+    title: "Schülerin an der Palucca Schule Dresden aufgenommen",
+  },
+  {
+    id: "2024-deutscher-wettbewerb",
+    year: "2024",
+    title:
+      "Deutscher Ballettwettbewerb – 1× 1. Platz, 2× 2. Platz, 3× 3. Platz, 5 Tänze für den World Dance Contest Niederlande qualifiziert",
+  },
+  {
+    id: "2024-hamburg-regional",
+    year: "2024",
+    title: "Regionaler Ballettwettbewerb Hamburg – 2× 1. Platz, 5× 2. Platz, 2× 3. Platz",
+  },
+  {
+    id: "2023-ave-bohemia",
+    year: "2023",
+    title: "Internationaler Ballettwettbewerb Ave Bohemia Prag – 6× 1. Platz, 2× 2. Platz",
+  },
+  {
+    id: "2023-jubilaeum",
+    year: "2023",
+    title: "10-jähriges Schuljubiläum mit dem Märchenballett „Schneewittchen“",
+  },
+  {
+    id: "2023-hamburg-deutscher",
+    year: "2023",
+    title:
+      "Deutscher Ballettwettbewerb Hamburg – 1. Platz in vier Kategorien (Minis Ballett, Minis Charakter, Erwachsene Ballett, Erwachsene Modern)",
+  },
+  {
+    id: "2023-palucca-milla",
+    year: "2023",
+    title: "Schülerin an der Palucca Schule Dresden aufgenommen",
+  },
+  {
+    id: "2022-ave-bohemia",
+    year: "2022",
+    title: "AVE Bohemia Prag – 5× 1. Platz, 1× 2. Platz, 1× 3. Platz",
+  },
+  {
+    id: "2021-yagp",
+    year: "2021",
+    title: "YAGP Germany – 3. Platz",
+  },
+  {
+    id: "2021-berlin-greta",
+    year: "2021",
+    title: "Schülerin an der Staatlichen Ballettschule Berlin aufgenommen",
+  },
+  {
+    id: "2021-berlin-helena",
+    year: "2021",
+    title: "Schülerin in die 4. Ausbildungsklasse der Staatlichen Ballettschule Berlin aufgenommen",
+  },
+  {
+    id: "2020-kinofilm",
+    year: "2020",
+    title:
+      "Schülerinnen im Kinofilm „Into the Beat – Dein Herz tanzt!“ (Kinopremiere 16. Juli 2020)",
+  },
+  {
+    id: "2020-berlin-mila",
+    year: "2020",
+    title: "Schülerin an der Staatlichen Ballettschule Berlin aufgenommen",
+  },
+  {
+    id: "2020-tanzolymp",
+    year: "2020",
+    title: "Tanzolymp International Berlin – 4. Platz von 72 Teilnehmern aus 28 Ländern",
+  },
+  {
+    id: "2019-vibe-wien",
+    year: "2019",
+    title: "VIBE Wien (Internationaler Ballettwettbewerb) – 2. und 3. Platz, Kategorie Professional",
+  },
+  {
+    id: "2019-ave-bohemia",
+    year: "2019",
+    title: "Ave Bohemia Prag – 23 Kinder, 10 Tänze: 5× 1. Platz, 5× 2. Platz",
+  },
+  {
+    id: "2018-opernball",
+    year: "2018",
+    title: "Opernball 2018 (Oper Leipzig) – Auftritt der Ballettschule Étoile",
+  },
+  {
+    id: "2018-applaus",
+    year: "2018",
+    title:
+      "11. Internationaler Ballettwettbewerb „Applaus“ – 3× 1. Platz, 1× 2. Platz, 1× 3. Platz, ausgezeichnet als erfolgreichste Ballettschule",
+  },
+  {
+    id: "2017-youth-globe",
+    year: "2017",
+    title:
+      "YOUTH GLOBE Award (AIMY) für Oksana Kulchytska – für herausragende Karriere und Engagement für junge Menschen",
+  },
+  {
+    id: "2017-prag",
+    year: "2017",
+    title: "Internationaler Ballettwettbewerb Prag – 6× 1. Platz, 1× 2. Platz, 1× 3. Platz, 1× 5. Platz",
+  },
+];
 
 export type Testimonial = {
   readonly quote: string;
