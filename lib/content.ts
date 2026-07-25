@@ -40,6 +40,22 @@ export const school = {
   hours: "Mo – Sa nach Vereinbarung",
 } as const;
 
+export type SocialLink = {
+  readonly label: string;
+  readonly href: string;
+};
+
+export const socialLinks: readonly SocialLink[] = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/ballettschule_etoile_leipzig/",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@oksanakulchytska1038",
+  },
+];
+
 export type Course = {
   readonly id: string;
   readonly title: string;

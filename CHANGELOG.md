@@ -6,6 +6,28 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.3.0] – 2026-07-25
+
+### Added
+
+- Social-Media-Links (Instagram, YouTube) als Icon-Links im Footer, zentral
+  in `lib/content.ts` (`socialLinks`) gepflegt.
+- Impressum-Seite mit den echten Pflichtangaben gemäß § 5 TMG befüllt
+  (Ballettschule Étoile, Oksana Kulchytska als Inhaberin, Adresse, Telefon,
+  E-Mail, inhaltlich Verantwortliche).
+- Datenschutz-Seite mit dem "Verantwortlicher"-Kontaktblock befüllt; der
+  restliche DSGVO-Fließtext bleibt als klar markierter Platzhalter bis zu
+  einem eigenen Rechtstext-Schritt.
+
+### Changed
+
+- `LegalPlaceholder` durch die flexiblere Komponente `LegalPage`
+  (Titel + beliebiger Inhalt + optionaler Platzhalter-Hinweis) ersetzt.
+
+### Removed
+
+- Ungenutzte `LegalPlaceholder`-Komponente entfernt.
+
 ## [1.2.2] – 2026-07-25
 
 ### Changed
