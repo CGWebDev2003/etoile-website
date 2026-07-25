@@ -6,6 +6,17 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.15.0] – 2026-07-25
+
+### Changed
+
+- Hero-Duo-Komposition entfernt, zurück zum ursprünglichen Einzelbild
+  (elegante Solo-Ballerina) ohne überlappende Ensemble-Foto-Kachel.
+
+### Removed
+
+- `public/images/hero-group.jpg` (nicht mehr verwendet).
+
 ## [1.14.0] – 2026-07-25
 
 ### Changed
