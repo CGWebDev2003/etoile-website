@@ -6,6 +6,15 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.14.0] – 2026-07-25
+
+### Changed
+
+- Duo-Bildkachel (Ensemble-Bühnenfoto) im Hero ab 1024px auf das
+  1,8-fache vergrößert (140px → 252px), damit die Ensemble-Szene auf
+  großen Bildschirmen besser zur Geltung kommt. Mobile/Tablet-Ansicht
+  bleibt unverändert.
+
 ## [1.13.0] – 2026-07-25
 
 ### Changed
