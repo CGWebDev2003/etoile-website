@@ -10,11 +10,17 @@ export type NavLink = {
 };
 
 export const navLinks: readonly NavLink[] = [
-  { label: "Über uns", href: "#ueber-uns" },
-  { label: "Kurse", href: "#kurse" },
-  { label: "Stundenplan", href: "#stundenplan" },
-  { label: "Erfolge", href: "#erfolge" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Start", href: "/" },
+  { label: "Über uns", href: "/ueber-uns" },
+  { label: "Kurse", href: "/kurse" },
+  { label: "Erfolge", href: "/erfolge" },
+  { label: "Kontakt", href: "/kontakt" },
+];
+
+/** Rechtlich vorgeschriebene Seiten – nur im Footer verlinkt, nicht in der Hauptnavigation. */
+export const legalLinks: readonly NavLink[] = [
+  { label: "Impressum", href: "/impressum" },
+  { label: "Datenschutz", href: "/datenschutz" },
 ];
 
 export const school = {
@@ -128,6 +134,44 @@ export const achievements: readonly Achievement[] = [
   { value: "Oper", label: "Auftritte an der Oper Leipzig – u. a. Nussknacker" },
   { value: "Ø", label: "Aufnahmen an staatlichen Ballettschulen jedes Jahr" },
 ];
+
+export type TeamMember = {
+  readonly id: string;
+  readonly name: string;
+  readonly role: string;
+  readonly bio: string;
+};
+
+/**
+ * Team-Vorstellung (ohne Schulleitung, die bereits in `school`/`About` steht).
+ * Wird in der Inhalts-Phase mit den echten Pädagoginnen und Pädagogen befüllt.
+ */
+export const team: readonly TeamMember[] = [];
+
+export type PricingRow = {
+  readonly id: string;
+  readonly label: string;
+  readonly price: string;
+  readonly note?: string;
+};
+
+export type PricingGroup = {
+  readonly id: string;
+  readonly title: string;
+  readonly rows: readonly PricingRow[];
+};
+
+/** Preisliste. Wird in der Inhalts-Phase befüllt. */
+export const pricing: readonly PricingGroup[] = [];
+
+export type AchievementEntry = {
+  readonly id: string;
+  readonly year: string;
+  readonly title: string;
+};
+
+/** Vollständige Erfolgschronik für /erfolge (Highlights bleiben in `achievements`). */
+export const achievementArchive: readonly AchievementEntry[] = [];
 
 export type Testimonial = {
   readonly quote: string;

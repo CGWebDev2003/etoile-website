@@ -21,7 +21,7 @@ const highlights: readonly { title: string; text: string }[] = [
 
 export function About(): ReactNode {
   return (
-    <section className={styles.section} id="ueber-uns">
+    <section className={styles.section}>
       <Container className={styles.inner}>
         <SectionHeading
           eyebrow="unsere Schule"

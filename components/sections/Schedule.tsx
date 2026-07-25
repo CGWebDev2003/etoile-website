@@ -6,7 +6,7 @@ import styles from "./Schedule.module.css";
 
 export function Schedule(): ReactNode {
   return (
-    <section className={styles.section} id="stundenplan">
+    <section className={styles.section}>
       <Container>
         <SectionHeading eyebrow="stundenplan" title="Unsere Trainingswoche" />
 

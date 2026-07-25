@@ -7,7 +7,7 @@ import styles from "./Hero.module.css";
 
 export function Hero(): ReactNode {
   return (
-    <section className={styles.hero} id="top">
+    <section className={styles.hero}>
       <Container className={styles.inner}>
         <div className={styles.figure} aria-hidden="true">
           <BallerinaSilhouette className={styles.silhouette} />
@@ -27,8 +27,8 @@ export function Hero(): ReactNode {
           </p>
 
           <div className={styles.actions}>
-            <Button href="#kontakt">Probestunde buchen</Button>
-            <Button href="#kurse" variant="outline">
+            <Button href="/kontakt">Probestunde buchen</Button>
+            <Button href="/kurse" variant="outline">
               Kurse entdecken
             </Button>
           </div>

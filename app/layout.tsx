@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Dancing_Script } from "next/font/google";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -49,7 +51,11 @@ export default function RootLayout({
       lang="de"
       className={`${montserrat.variable} ${dancingScript.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
