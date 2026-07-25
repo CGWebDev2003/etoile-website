@@ -6,6 +6,14 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.2.1] – 2026-07-25
+
+### Changed
+
+- Testimonials durch vier echte 5-Sterne-Google-Bewertungen ersetzt
+  (Teona Fritschka, Kornelia Klöpper-Sadowsky, Siegfried Dietze, Anastasia)
+  statt der bisherigen Platzhalter-Zitate.
+
 ## [1.2.0] – 2026-07-25
 
 ### Added

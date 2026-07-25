@@ -19,7 +19,7 @@ export function Testimonials(): ReactNode {
     <section className={styles.section} aria-label="Stimmen unserer Schülerinnen">
       <div className={styles.panel}>
         <p className={styles.eyebrow} aria-hidden="true">
-          Stimmen
+          Google-Bewertungen
         </p>
 
         <blockquote className={styles.quote}>
