@@ -10,23 +10,25 @@ export function Hero(): ReactNode {
     <section className={styles.hero}>
       <Container className={styles.inner}>
         <div className={styles.figure}>
-          <Image
-            src="/images/hero.jpg"
-            alt="Tänzerin der Ballettschule Étoile in einer Arabesque auf der Bühne"
-            width={820}
-            height={900}
-            priority
-            sizes="(min-width: 1024px) 320px, 70vw"
-            className={styles.photo}
-          />
-          <div className={styles.groupPhoto}>
+          <div className={styles.photoFrame}>
             <Image
-              src="/images/hero-group.jpg"
-              alt="Kinder und Ensemble der Ballettschule Étoile bei einer Bühnenauftritt-Vorstellung mit floralen Reifen, im Hintergrund ein springender Tänzer"
-              fill
-              sizes="(min-width: 1024px) 65vw, 100vw"
-              className={styles.groupPhotoImg}
+              src="/images/hero.jpg"
+              alt="Tänzerin der Ballettschule Étoile in einer Arabesque auf der Bühne"
+              width={820}
+              height={900}
+              priority
+              sizes="(min-width: 1024px) 45vw, 90vw"
+              className={styles.photo}
             />
+            <div className={styles.photoDuo}>
+              <Image
+                src="/images/hero-group.jpg"
+                alt="Ensemble der Ballettschule Étoile bei einer Bühnenauftritt-Vorstellung mit floralen Reifen"
+                fill
+                sizes="150px"
+                className={styles.photoDuoImg}
+              />
+            </div>
           </div>
         </div>
 

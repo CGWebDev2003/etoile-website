@@ -6,6 +6,15 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.13.0] – 2026-07-25
+
+### Changed
+
+- Hero-Layout auf die ursprüngliche Duo-Komposition zurückgesetzt: die
+  elegante Solo-Ballerina als großes Hauptbild mit dem Ensemble-
+  Bühnenfoto als kleiner, überlappender Kachel unten links – statt der
+  zwischenzeitlichen Seite-an-Seite-Anordnung.
+
 ## [1.12.0] – 2026-07-25
 
 ### Changed
