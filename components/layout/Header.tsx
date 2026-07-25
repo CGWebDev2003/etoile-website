@@ -13,8 +13,8 @@ export function Header(): ReactNode {
           <Image
             src="/images/logo.png"
             alt={`${school.name} – Logo`}
-            width={189}
-            height={136}
+            width={1477}
+            height={1065}
             priority
             unoptimized
             className={styles.logo}
