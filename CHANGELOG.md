@@ -6,6 +6,26 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.17.0] – 2026-07-26
+
+### Added
+
+- Neue geteilte Komponente `SocialLinks` (`components/ui/SocialLinks.tsx`)
+  mit soliden Instagram-/YouTube-Icons in Badge-Form.
+- Social-Icons im Header (Étoile-Crimson) neben der Desktop-Navigation
+  und im mobilen Menü-Drawer sichtbar – vorher nur im Footer vorhanden.
+
+### Changed
+
+- Social-Icons im Footer deutlich größer und in den Original-Marken-
+  farben (Instagram-Gradient, YouTube-Rot) statt dezenter Outline-Icons,
+  damit sie stärker auffallen.
+
+### Removed
+
+- Doppelt gepflegte Icon-Definitionen aus `Footer.tsx` zugunsten der
+  geteilten `SocialLinks`-Komponente.
+
 ## [1.16.1] – 2026-07-26
 
 ### Changed
