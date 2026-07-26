@@ -6,6 +6,15 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.15.2] – 2026-07-26
+
+### Fixed
+
+- „Mehr erfahren"-Button auf der vollständigen Kursübersicht (`/kurse`)
+  verlinkte auf sich selbst und tat beim Klick nichts. Auf dieser Seite
+  heißt der Button jetzt „Kontakt aufnehmen" und führt zu `/kontakt`. Die
+  Startseiten-Vorschau behält „Mehr erfahren" → `/kurse` bei.
+
 ## [1.15.1] – 2026-07-26
 
 ### Changed
