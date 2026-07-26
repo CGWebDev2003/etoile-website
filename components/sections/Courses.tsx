@@ -12,6 +12,8 @@ export type CoursesProps = {
 
 export function Courses({ limit }: CoursesProps = {}): ReactNode {
   const items = limit ? courses.slice(0, limit) : courses;
+  const linkHref = limit ? "/kurse" : "/kontakt";
+  const linkLabel = limit ? "Mehr erfahren" : "Kontakt aufnehmen";
 
   return (
     <section className={styles.section}>
@@ -24,8 +26,8 @@ export function Courses({ limit }: CoursesProps = {}): ReactNode {
               <span className={styles.age}>{course.age}</span>
               <h3 className={styles.title}>{course.title}</h3>
               <p className={styles.text}>{course.description}</p>
-              <Link href="/kurse" className={styles.link}>
-                Mehr erfahren
+              <Link href={linkHref} className={styles.link}>
+                {linkLabel}
                 <span aria-hidden="true" className={styles.arrow}>
                   →
                 </span>
