@@ -6,6 +6,15 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.16.0] – 2026-07-26
+
+### Added
+
+- Kontaktformular auf der Kontaktseite (`/kontakt`): Name, E-Mail, Telefon
+  (optional) und Nachricht. Rein clientseitig, ohne Versand-Anbindung –
+  das Formular ist bewusst noch nicht mit einem Backend/E-Mail-Service
+  verbunden.
+
 ## [1.15.2] – 2026-07-26
 
 ### Fixed
