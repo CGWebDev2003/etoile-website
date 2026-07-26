@@ -182,15 +182,15 @@ export type Achievement = {
 
 export const achievements: readonly Achievement[] = [
   {
-    value: "Beste",
+    value: "Ausgezeichnet",
     label: "Ballettschule – mehrfach ausgezeichnet bei internationalen Wettbewerben",
   },
   {
-    value: "Oper",
-    label: "Gemeinsame Bühnenauftritte mit der Oper Leipzig, u. a. im „Nussknacker“",
+    value: "Bühnenpraxis",
+    label: "Reale Bühnenerfahrung durch gemeinsame Auftritte mit der Oper Leipzig, u. a. im „Nussknacker“",
   },
   {
-    value: "Staatlich",
+    value: "Aufnahmen",
     label:
       "Schülerinnen aufgenommen an der Palucca Hochschule Dresden und der Staatlichen Ballettschule Berlin",
   },
