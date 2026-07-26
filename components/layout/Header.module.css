@@ -65,6 +65,11 @@
   transition: width var(--transition-base);
 }
 
+.social {
+  padding-right: var(--space-2);
+  border-right: 1px solid var(--border);
+}
+
 .cta {
   display: inline-flex;
   align-items: center;

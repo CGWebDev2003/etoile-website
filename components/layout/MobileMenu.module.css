@@ -113,6 +113,10 @@
   text-transform: uppercase;
 }
 
+.social {
+  margin-top: var(--space-2);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .link:hover {
     color: var(--accent-strong);

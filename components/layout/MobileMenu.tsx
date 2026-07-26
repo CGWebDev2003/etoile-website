@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import type { NavLink } from "@/lib/content";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import styles from "./MobileMenu.module.css";
 
 export type MobileMenuProps = {
@@ -90,6 +91,8 @@ export function MobileMenu({ links }: MobileMenuProps): ReactNode {
         >
           Probestunde buchen
         </Link>
+
+        <SocialLinks tone="accent" size="sm" className={styles.social} />
       </nav>
     </div>
   );

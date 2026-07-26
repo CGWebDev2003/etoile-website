@@ -1,24 +1,9 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { legalLinks, navLinks, school, socialLinks } from "@/lib/content";
+import { legalLinks, navLinks, school } from "@/lib/content";
+import { SocialLinks } from "@/components/ui/SocialLinks";
 import styles from "./Footer.module.css";
-
-const socialIcons: Readonly<Record<string, ReactNode>> = {
-  Instagram: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-    </svg>
-  ),
-  YouTube: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-      <rect x="2.5" y="5" width="19" height="14" rx="4" />
-      <path d="M10.5 9.5l5 2.5-5 2.5v-5z" fill="currentColor" stroke="none" />
-    </svg>
-  ),
-};
 
 export function Footer(): ReactNode {
   const year = new Date().getFullYear();
@@ -70,21 +55,7 @@ export function Footer(): ReactNode {
             </a>
           </address>
 
-          <ul className={styles.social}>
-            {socialLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  className={styles.socialLink}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.label}
-                >
-                  {socialIcons[link.label]}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <SocialLinks tone="brand" size="lg" className={styles.social} />
         </div>
       </div>
 
