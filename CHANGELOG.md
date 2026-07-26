@@ -6,6 +6,14 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.16.1] – 2026-07-26
+
+### Changed
+
+- Next.js Dev-Indicator (Icon unten links im lokalen `next dev`) über
+  `devIndicators: false` deaktiviert. Betraf nur die lokale Entwicklung,
+  nicht die live gehostete Seite.
+
 ## [1.16.0] – 2026-07-26
 
 ### Added
