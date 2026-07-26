@@ -6,6 +6,23 @@ dokumentiert.
 Das Format orientiert sich an [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [1.15.1] – 2026-07-26
+
+### Changed
+
+- Schlagwörter im Abschnitt „Erfolge unserer Schule" korrigiert, um
+  irreführende Aussagen zu vermeiden: „Beste" → „Ausgezeichnet" (keine
+  unbelegte Superlativ-Behauptung), „Oper" → „Bühnenpraxis" (stellt die
+  reale Bühnenerfahrung der Schülerinnen heraus statt eines nichtssagenden
+  Stichworts), „Staatlich" → „Aufnahmen" (vermeidet den falschen Eindruck,
+  die Étoile Ballettschule selbst sei eine staatliche Einrichtung – die
+  Aufnahme an staatlichen Institutionen wie der Palucca Hochschule Dresden
+  bleibt im Label erhalten).
+- Karten-Layout der Erfolge-Sektion überarbeitet (einspaltig < 480px,
+  `min-width: 0` auf den Karten, angepasste Schriftgröße), damit die
+  längeren Schlagwörter bei 375px, 768px und 1440px ohne horizontalen
+  Overflow oder hässliche Wortumbrüche darstellbar sind.
+
 ## [1.15.0] – 2026-07-25
 
 ### Changed
