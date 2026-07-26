@@ -6,7 +6,6 @@ Primaballerina Oksana Kulchytska. Umgesetzt mit Next.js (App Router), React
 Server Components und CSS Modules im Blush-/Ballett-Design.
 
 ## Entwicklung
-
 ```bash
 npm install
 npm run dev
